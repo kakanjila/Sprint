@@ -1,6 +1,7 @@
 @echo off
 
 :: Variables pour la librairie FrontServlet
+:: abcd
 set APP_NAME=FrameworkServlet
 set SRC_DIR=src\main\java
 set BUILD_DIR=build
