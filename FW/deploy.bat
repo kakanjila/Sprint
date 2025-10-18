@@ -1,12 +1,11 @@
 @echo off
 
 :: Variables pour la librairie FrontServlet
-:: abcd
 set APP_NAME=FrameworkServlet
 set SRC_DIR=src\main\java
 set BUILD_DIR=build
 set LIB_DIR=lib
-set SERVLET_API_JAR=%LIB_DIR%\servlet-api.jar
+set SERVLET_API_JAR=%LIB_DIR%\*
 set TEST_LIB_DIR=..\testFramework_S5\lib
 
 :: Nettoyage
