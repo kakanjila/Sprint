@@ -38,6 +38,15 @@ if not exist %TEST_LIB_DIR% (
 )
 copy /Y %BUILD_DIR%\%APP_NAME%.jar %TEST_LIB_DIR%\
 
+set REFLECTIONS_JAR=lib\reflections-0.10.2.jar
+set JAVASSIST_JAR=lib\javassist-3.31.0-G2.jar
+
+:: Compilation avec Reflections
+javac -cp "%SERVLET_API_JAR%;%REFLECTIONS_JAR%;%JAVASSIST_JAR%" -d %BUILD_DIR% @sources.txt
+
+:: Execution avec Reflections
+java -cp "%BUILD_DIR%;%SERVLET_API_JAR%;%REFLECTIONS_JAR%;%JAVASSIST_JAR%" com.framework.servlet.AnnotationReader
+
 echo.
 echo Librairie FrontServlet buildée avec succes!
 echo Copie vers: %TEST_LIB_DIR%\%APP_NAME%.jar
