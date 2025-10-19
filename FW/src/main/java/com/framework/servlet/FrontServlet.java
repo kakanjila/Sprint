@@ -10,9 +10,12 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+
+@MyAnnotation(URL = "https://api.example.com/products")
 public class FrontServlet extends HttpServlet {
 
     @Override
+    @MyAnnotation(URL = "ejter")
     public void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/plain");

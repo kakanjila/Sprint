@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:/xampp/tomcat/lib/*.jar",
+        "C:jakarta.servlet-api-6.0.0.jar",
+        "FW/lib/guava-33.3.1-jre.jar",
+        "FW/lib/javassist-3.27.0-GA.jar",
+        "FW/lib/reflections-0.10.2.jar",
+        "FW/lib/servlet-api.jar",
+        "FW/lib/slf4j-api-2.0.9.jar",
+        "FW/lib/slf4j-simple-2.0.9.jar"
+    ]
+}
