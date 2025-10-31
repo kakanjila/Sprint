@@ -19,14 +19,7 @@ public class AnnotationReader {
                 System.out.println("Classes trouvées avec @MyAnnotation:");
                 for (Class<?> clazz : annotatedClasses) {
                     MyAnnotation annotation = clazz.getAnnotation(MyAnnotation.class);
-                    System.out.println(" - " + clazz.getSimpleName() + " : " + annotation.URL());
-                    
-                    Arrays.stream(clazz.getDeclaredMethods())
-                          .filter(method -> method.isAnnotationPresent(MyAnnotation.class))
-                          .forEach(method -> {
-                              MyAnnotation methodAnnotation = method.getAnnotation(MyAnnotation.class);
-                              System.out.println("   ↳ Méthode " + method.getName() + " : " + methodAnnotation.URL());
-                          });
+                    System.out.println(" - " + clazz.getSimpleName());
                 }
             }
             
