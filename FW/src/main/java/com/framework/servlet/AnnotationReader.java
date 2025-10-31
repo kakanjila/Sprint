@@ -10,7 +10,6 @@ public class AnnotationReader {
         System.out.println("Recherche de toutes les classes utilisant @MyAnnotation...");
         
         try {
-            // Utiliser Reflections pour scanner le package
             Reflections reflections = new Reflections("com.framework.servlet");
             Set<Class<?>> annotatedClasses = reflections.getTypesAnnotatedWith(MyAnnotation.class);
             
@@ -22,7 +21,6 @@ public class AnnotationReader {
                     MyAnnotation annotation = clazz.getAnnotation(MyAnnotation.class);
                     System.out.println(" - " + clazz.getSimpleName() + " : " + annotation.URL());
                     
-                    // Optionnel: Vérifier aussi les méthodes annotées
                     Arrays.stream(clazz.getDeclaredMethods())
                           .filter(method -> method.isAnnotationPresent(MyAnnotation.class))
                           .forEach(method -> {

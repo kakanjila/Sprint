@@ -9,4 +9,4 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD})
 public @interface MyAnnotation {
     String URL() default "";
-}
+}   
