@@ -39,4 +39,9 @@ public class Produit {
     @GetMapping("/products/void")
     public void voidMethod() {
     }
+
+    @GetMapping("/products/void2")
+    public String vue() {
+        return "a.jsp";
+    }
 }
