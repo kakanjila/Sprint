@@ -10,7 +10,7 @@ set "TARGET_DIR=%ROOT_DIR%\target"
 set "CLASSES_DIR=%TARGET_DIR%\classes"
 set "JAR_FILE=%TARGET_DIR%\MyFramework.jar"
 set "MANIFEST_FILE=%TARGET_DIR%\MANIFEST.MF"
-set "DEST_TOMCAT_LIB=C:\apache-tomcat-10.1.48\lib"
+set "DEST_TOMCAT_LIB=E:\apache-tomcat-11.0.11\apache-tomcat-11.0.11\lib"
 set "DEST_JAR=%DEST_TOMCAT_LIB%\MyFramework.jar"
 
 REM Ensure tools
